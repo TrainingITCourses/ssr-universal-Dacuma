@@ -1,0 +1,8 @@
+<h2 class="title">Lista de lanzamientos (Angular Universal SSR)</h2>
+<div *ngIf="!isLoading">
+  <dcm-search [values]="values" (optionChange)="optionChange($event)" (valueChange)="valueChange($event)"></dcm-search>
+  <dcm-display [launches]="launches"></dcm-display>
+</div>
+<div *ngIf="isLoading">
+  <p>Iniciando datos...</p>
+</div>

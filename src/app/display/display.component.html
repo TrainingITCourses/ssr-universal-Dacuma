@@ -1,0 +1,11 @@
+<div>
+  <h3>Resultados: <small>{{launches.length}}</small></h3>
+
+  <table>
+    <tr *ngFor="let launch of launches">
+      <td>
+        {{ launch.name }}
+      </td>
+    </tr>
+  </table>
+</div>
